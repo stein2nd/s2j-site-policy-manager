@@ -2,6 +2,12 @@
 
 ## unreleased
 
+## 0.0.1 - 2026-10-08
+
+### Changed
+
+* `docs_mod/product-direction.md` の「次」を「下記」または「右記」に、「とき」を「場合」に直した。
+
 ## 0.0.1 - 2026-10-04
 
 ### Changed
