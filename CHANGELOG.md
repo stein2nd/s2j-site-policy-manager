@@ -2,6 +2,12 @@
 
 ## unreleased
 
+## 0.0.1 - 2026-10-10
+
+### Changed
+
+* `docs_mod/product-direction.md` の「種別へ広げる」を「種別に広げる」に、「経緯へ移し」を「経緯に移し」に直した。
+
 ## 0.0.1 - 2026-10-08
 
 ### Changed
