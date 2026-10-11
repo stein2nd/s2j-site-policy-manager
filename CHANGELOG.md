@@ -2,6 +2,12 @@
 
 ## unreleased
 
+## 0.0.1 - 2026-10-11
+
+### Changed
+
+* `rollup` を v4.64.5、`vite` を v8.3.4に上げ、`overrides` の rollup も合わせた。
+
 ## 0.0.1 - 2026-10-10
 
 ### Changed
