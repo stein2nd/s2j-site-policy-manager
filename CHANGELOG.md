@@ -2,6 +2,13 @@
 
 ## unreleased
 
+## 0.0.1 - 2026-10-15
+
+### Changed
+
+* `react` と `react-dom` を v19.3.1、`@s2j/docs-linter` を v1.0.29、`rollup` を v4.64.7に上げ、`overrides` の rollup も合わせた。
+* textlint の許可パターンに `#status-*` アンカー ID を追加
+
 ## 0.0.1 - 2026-10-11
 
 ### Changed
