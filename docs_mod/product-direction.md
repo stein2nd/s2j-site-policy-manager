@@ -191,6 +191,7 @@ KIS 向けに、下記を実装します。
 
 * 監修済み文章のライセンスは、プラグインと同じ GPL-3.0-or-later とする。
 * ひな型の本文は、このリポジトリに同梱する。別配布にはしない。
+* 実行環境の PHP は v8.3以上とする。WordPress の[必須要件](https://ja.wordpress.org/about/requirements/)の推奨ベースラインに合わせる。
 
 ## 未決事項
 
@@ -222,3 +223,4 @@ WordPress 本体の挙動は、下記の文書を参照しました。
 | 2026-09-29 | リポジトリ名を `s2j-site-policy-manager` とした |
 | 2026-09-29 | KIS WordPress の `docs_mod/specs.md` で、名称を S2J Site Policy Manager に、データモデルをポリシー台帳に改めた |
 | 2026-10-01 | 監修済み文章はプラグインと同じ GPL-3.0-or-later とし、ひな型の本文はこのリポジトリに同梱する、と決定 |
+| 2026-10-24 | 実行環境の PHP を v8.3以上とし、WordPress 推奨ベースラインに合わせた |

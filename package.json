@@ -1,38 +1,50 @@
 {
-  "name": "s2j-site-policy-manager",
-  "version": "0.0.1",
-  "description": "The WordPress privacy page, extended into a ledger of site policies.",
-  "license": "GPL-3.0-or-later",
-  "author": "Koutarou ISHIKAWA <stein2nd@gmail.com>",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/stein2nd/s2j-site-policy-manager.git"
-  },
-  "homepage": "https://github.com/stein2nd/s2j-site-policy-manager#readme",
-  "bugs": {
-    "url": "https://github.com/stein2nd/s2j-site-policy-manager/issues"
-  },
-  "keywords": [],
-  "workspaces": [],
-  "directories": {},
-  "files": [],
-  "main": "",
-  "scripts": {
-    "lint:docs": "s2j-docs-linter ./README.md ./CHANGELOG.md ./docs/**/*.md ./docs_mod/**/*.md"
-  },
-  "dependencies": {
-    "react": "^19.3.1",
-    "react-dom": "^19.3.1"
-  },
-  "overrides": {
-    "rollup": "^4.64.7"
-  },
-  "devDependencies": {
-    "@s2j/docs-linter": "^1.0.29",
-    "rollup": "^4.64.7",
-    "vite": "^8.3.4"
-  },
-  "allowScripts": {
-    "@s2j/docs-linter": true
-  }
+    "name": "s2j-site-policy-manager",
+    "version": "0.0.1",
+    "description": "The WordPress privacy page, extended into a ledger of site policies.",
+    "license": "GPL-3.0-or-later",
+    "author": "Koutarou ISHIKAWA <stein2nd@gmail.com>",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/stein2nd/s2j-site-policy-manager.git"
+    },
+    "homepage": "https://github.com/stein2nd/s2j-site-policy-manager#readme",
+    "bugs": {
+        "url": "https://github.com/stein2nd/s2j-site-policy-manager/issues"
+    },
+    "keywords": [],
+    "workspaces": [],
+    "directories": {},
+    "files": [],
+    "main": "",
+    "scripts": {
+        "lint:docs": "s2j-docs-linter ./README.md ./CHANGELOG.md ./docs/**/*.md ./docs_mod/**/*.md",
+        "lint:php": "composer lint:php",
+        "phpstan": "composer phpstan",
+        "phpcs": "composer phpcs",
+        "phpcs:wpcs": "composer phpcs:wpcs",
+        "makepot": "wp i18n make-pot . languages/s2j-site-policy-manager.pot --domain=s2j-site-policy-manager",
+        "makemo": "wp i18n make-mo languages",
+        "makejson": "wp i18n make-json languages --no-purge",
+        "makei18n": "npm run makemo && npm run makejson",
+        "postbuild:production:gutenberg": "npm run makejson",
+        "pretest:unit:php:local": "composer install --no-interaction --prefer-dist",
+        "test:unit:php:local": "composer test",
+        "pretest:lint:php": "composer install --no-interaction --prefer-dist"
+    },
+    "dependencies": {
+        "react": "^19.3.1",
+        "react-dom": "^19.3.1"
+    },
+    "overrides": {
+        "rollup": "^4.65.0"
+    },
+    "devDependencies": {
+        "@s2j/docs-linter": "^1.0.30",
+        "rollup": "^4.65.0",
+        "vite": "^8.3.5"
+    },
+    "allowScripts": {
+        "@s2j/docs-linter": true
+    }
 }

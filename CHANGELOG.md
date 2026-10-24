@@ -2,6 +2,15 @@
 
 ## unreleased
 
+## 0.0.1 - 2026-10-24
+
+### Changed
+
+* WordPress 推奨要件に合わせ、実行環境の PHP 下限を v8.3にそろえた。`composer.json`、`phpcs.xml.dist`、`phpstan.neon.dist`、`.github/workflows/phpunit.yml` と `docs_mod/product-direction.md` の決定を更新した。
+* `composer.json` と `composer.lock` を追加し、PHPUnit、PHPStan、PHPCS、WPCS 向けの開発依存と lint スクリプトを置いた。`phpcs.xml.dist`、`phpcs.wpcs.xml.dist`、`phpstan.neon.dist`、`.env.tests.example` を同梱した。
+* `.gitignore` に `vendor/`、テスト用 `.env.tests`、ローカル WordPress テスト用ディレクトリ、PHPUnit の結果キャッシュを追加した。
+* `package.json` に PHP lint、i18n、ローカル PHPUnit 用の npm script を足した。`@s2j/docs-linter` を v1.0.30、`rollup` を v4.65.0、`vite` を v8.3.5に上げ、`overrides` の rollup も合わせた。
+
 ## 0.0.1 - 2026-10-15
 
 ### Changed
