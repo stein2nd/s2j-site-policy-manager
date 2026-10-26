@@ -23,13 +23,14 @@
         "phpstan": "composer phpstan",
         "phpcs": "composer phpcs",
         "phpcs:wpcs": "composer phpcs:wpcs",
+        "test:unit:php:local": "composer test",
         "makepot": "wp i18n make-pot . languages/s2j-site-policy-manager.pot --domain=s2j-site-policy-manager",
         "makemo": "wp i18n make-mo languages",
-        "makejson": "wp i18n make-json languages --no-purge",
+        "makejson": "wp i18n make-json languages",
+        "makejson:keep": "wp i18n make-json languages --no-purge",
         "makei18n": "npm run makemo && npm run makejson",
         "postbuild:production:gutenberg": "npm run makejson",
         "pretest:unit:php:local": "composer install --no-interaction --prefer-dist",
-        "test:unit:php:local": "composer test",
         "pretest:lint:php": "composer install --no-interaction --prefer-dist"
     },
     "dependencies": {

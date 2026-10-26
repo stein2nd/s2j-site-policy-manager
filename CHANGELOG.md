@@ -2,6 +2,14 @@
 
 ## unreleased
 
+## 0.0.1 - 2026-10-26
+
+### Changed
+
+* `makejson` のデフォルトを purge ありにし、孤児 JED を消すようにした。`--no-purge` は `makejson:keep` に分けた。
+* `vite.config.ts` にプレースホルダ設定と、管理 JS ビルド先の注記を追加した。
+* `.gitignore` に、JED のコミット方針と `makejson` / `makejson:keep` の使い分けのコメントを足した。
+
 ## 0.0.1 - 2026-10-24
 
 ### Changed
