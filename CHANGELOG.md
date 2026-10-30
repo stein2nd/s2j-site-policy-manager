@@ -2,6 +2,13 @@
 
 ## unreleased
 
+## 0.0.1 - 2026-10-30
+
+### Changed
+
+* `@s2j/docs-linter` を v1.0.31、`rollup` を v4.66.0に上げ、`overrides` の rollup も合わせた。
+* `composer.lock` を更新し、PHPStan を v2.3.4に上げた。
+
 ## 0.0.1 - 2026-10-26
 
 ### Changed
