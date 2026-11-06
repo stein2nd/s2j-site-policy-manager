@@ -31,6 +31,8 @@
         "makei18n": "npm run makemo && npm run makejson",
         "postbuild:production:gutenberg": "npm run makejson",
         "pretest:unit:php:local": "composer install --no-interaction --prefer-dist",
+        "prephpunit:wp-env": "composer install --no-interaction --prefer-dist",
+        "phpunit:wp-env": "composer test:unit",
         "pretest:lint:php": "composer install --no-interaction --prefer-dist"
     },
     "dependencies": {

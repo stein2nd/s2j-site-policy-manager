@@ -2,6 +2,13 @@
 
 ## unreleased
 
+## 0.0.1 - 2026-11-06
+
+### Changed
+
+* GitHub Actions の PHPUnit が `phpunit:wp-env` 未定義で落ちていたため、`package.json` に script を足し、`composer test:unit` でユニット PHPUnit を走らせるようにした。
+* `phpunit.unit.xml.dist` と `tests/` にスモーク用ユニットテストを追加した。`.github/workflows/phpunit.yml` のステップ名を「Run PHPUnit (unit)」に改めた。
+
 ## 0.0.1 - 2026-11-05
 
 ### Changed
