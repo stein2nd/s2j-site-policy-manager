@@ -6,7 +6,7 @@
 
 ### Changed
 
-* GitHub Actions の `docs-lint`、`phpunit`、`dist-zip` で Node.js を v22に上げ、ランナーの Node v20非推奨に伴う Annotation を避けた。
+* GitHub Actions の `docs-lint`、`phpunit`、`dist-zip` で Node.js を v22に上げ、`actions/checkout` と `actions/setup-node` を v5に、`actions/upload-artifact` を v6に上げ、Action 本体の Node v20非推奨 Annotation を避けた。
 * `@s2j/docs-linter` を v1.0.34、`rollup` を v4.68.7、`vite` を v8.3.8に上げ、`overrides` の rollup も合わせた。
 * `composer.lock` を更新し、PHPStan を v2.3.7、PHPUnit を v9.6.39に上げた。
 
